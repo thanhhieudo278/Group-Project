@@ -8,7 +8,7 @@ import{
 } from 'react-native';
 import { Size } from 'react-native-ui-lib/generatedTypes/src/components/skeletonView';
 //component = function
-function MainScreen(props)
+function WellcomeScreen(props)
 {
     return <View style=
     {{
@@ -17,22 +17,19 @@ function MainScreen(props)
         
     }}>
         <View style={{        
-            alignItems: 'center',
+            alignSelf: 'center',
             marginTop: 130,
-            marginHorizontal:100,
-            flex : 3,
-            backgroundColor: "red"
+            flex : 3
         }}>
-            <Text style={{
+            <Image
+                source={
+                    require('../assets/ICgym.jpg')
+                } 
                 
-                color: "black",
-                fontSize: 26,
-                
-
-            }}> Tell me more about yourself</Text>
+            />
         </View>
         <View style={{
-            backgroundColor: 'purple',
+            
             flex: 1,
             
         }}>
@@ -64,4 +61,4 @@ function MainScreen(props)
     </View>    
 }
 
-export default MainScreen
+export default WellcomeScreen
