@@ -4,24 +4,30 @@ import{
     View,
     Image,
     ImageBackground,
-    TouchableOpacity
+    TouchableOpacity,
+    
 } from 'react-native';
+import { Directions, TextInput } from 'react-native-gesture-handler';
 import { Size } from 'react-native-ui-lib/generatedTypes/src/components/skeletonView';
 //component = function
 function MainScreen(props)
 {
     return <View style=
     {{
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#F0F8FF',
         flex: 1
         
     }}>
+        <View style={{
+            
+            flex:1
+        }}></View>
+
         <View style={{        
-            alignItems: 'center',
-            marginTop: 130,
+            alignItems: 'center',   
             marginHorizontal:100,
-            flex : 3,
-            backgroundColor: "red"
+            flex : 1,
+            
         }}>
             <Text style={{
                 
@@ -32,7 +38,109 @@ function MainScreen(props)
             }}> Tell me more about yourself</Text>
         </View>
         <View style={{
-            backgroundColor: 'purple',
+            
+            flex:4
+        }}>
+            <View style={{
+                flexDirection: 'row',
+                flexWrap: "wrap",
+                backgroundColor: '#FFFFFF',
+                borderRadius:10,
+                marginHorizontal:20,
+                marginVertical:20,
+                height: 60,
+                alignItems: 'center',
+                borderColor: '#6666FF',
+                borderWidth: 2
+                
+            }}>                                    
+                <TextInput style={{
+                    marginLeft:20,
+                    fontSize:25,
+                    
+                }}
+                    placeholder= 'Enter age'
+                    keyboardType='number-pad'
+                    maxLength = {3}    
+                />
+                   
+                <View style={{flex:1}}/> 
+                  
+                <Text style={{
+                    marginEnd:20,
+                    color: 'black',
+                    fontSize:14,       
+                }}>Your </Text>                  
+            </View>
+
+            <View style={{
+                flexDirection: 'row',
+                flexWrap: "wrap",
+                backgroundColor: '#FFFFFF',
+                borderRadius:10,
+                marginHorizontal:20,
+                marginVertical:20,
+                height: 60,
+                alignItems: 'center',
+                borderColor: '#6666FF',
+                borderWidth: 2
+                
+            }}>                                    
+                <TextInput style={{
+                    marginLeft:20,
+                    fontSize:25,
+                    
+                }}
+                    placeholder= 'Enter Gender'
+                    keyboardType= 'default' 
+                    maxLength = {6}    
+                />
+                   
+                <View style={{flex:1}}/> 
+                  
+                <Text style={{
+                    marginEnd:20,
+                    color: 'black',
+                    fontSize:14,       
+                }}>Your Gender</Text>                  
+            </View>
+            <View style={{
+                flexDirection: 'row',
+                flexWrap: "wrap",
+                backgroundColor: '#FFFFFF',
+                borderRadius:10,
+                marginHorizontal:20,
+                marginVertical:20,
+                height: 60,
+                alignItems: 'center',
+                borderColor: '#6666FF',
+                borderWidth: 2
+                
+            }}>                                    
+                <TextInput style={{
+                    marginLeft:20,
+                    fontSize:25,
+                    
+                }}
+                    placeholder= 'Enter Weight'
+                    keyboardType= 'decimal-pad'
+                    maxLength = {6}    
+                />
+                   
+                <View style={{flex:1}}/> 
+                  
+                <Text style={{
+                    marginEnd:20,
+                    color: 'black',
+                    fontSize:14,       
+                }}>Your Weight</Text>                  
+            </View>
+
+            
+        </View>
+        
+        <View style={{
+            
             flex: 1,
             
         }}>
@@ -54,7 +162,7 @@ function MainScreen(props)
                     marginVertical: 10,
                 
 
-                }}>Start
+                }}>Next
                 </Text>
 
             </TouchableOpacity>
