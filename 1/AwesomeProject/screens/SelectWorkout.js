@@ -19,6 +19,7 @@ function SelectWorkout(props)
         
     }}>
         
+        
        <View style={{        
             alignItems: 'center',   
             marginHorizontal:100,

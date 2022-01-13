@@ -10,7 +10,7 @@ import{
 import { Directions, TextInput } from 'react-native-gesture-handler';
 import { Size } from 'react-native-ui-lib/generatedTypes/src/components/skeletonView';
 //component = function
-function MainScreen(props)
+function SignupScreen(props)
 {
     return <View style=
     {{
@@ -25,18 +25,18 @@ function MainScreen(props)
 
         <View style={{        
             alignItems: 'center',   
-            marginHorizontal:100,
+            marginHorizontal:1,
             flex : 1,
             
         }}>
             <Text style={{
                 
                 color: "black",
-                fontSize: 26,
-                
+                fontSize: 35,
 
-            }}> Tell me more about yourself</Text>
+            }}> Create your account</Text>
         </View>
+
         <View style={{
             
             flex:4
@@ -59,18 +59,13 @@ function MainScreen(props)
                     fontSize:25,
                     
                 }}
-                    placeholder= 'Enter age'
+                    placeholder= 'Username'
                     keyboardType='number-pad'
                     maxLength = {3}    
                 />
                    
                 <View style={{flex:1}}/> 
-                  
-                <Text style={{
-                    marginEnd:20,
-                    color: 'black',
-                    fontSize:14,       
-                }}>Your age</Text>                  
+                                    
             </View>
 
             <View style={{
@@ -91,19 +86,15 @@ function MainScreen(props)
                     fontSize:25,
                     
                 }}
-                    placeholder= 'Enter Gender'
+                    placeholder= 'E-mail'
                     keyboardType= 'default' 
                     maxLength = {6}    
                 />
                    
                 <View style={{flex:1}}/> 
-                  
-                <Text style={{
-                    marginEnd:20,
-                    color: 'black',
-                    fontSize:14,       
-                }}>Your Gender</Text>                  
+                                  
             </View>
+           
             <View style={{
                 flexDirection: 'row',
                 flexWrap: "wrap",
@@ -122,23 +113,30 @@ function MainScreen(props)
                     fontSize:25,
                     
                 }}
-                    placeholder= 'Enter Weight'
+                    placeholder= 'Password'
                     keyboardType= 'decimal-pad'
                     maxLength = {6}    
                 />
                    
-                <View style={{flex:1}}/> 
-                  
-                <Text style={{
-                    marginEnd:20,
-                    color: 'black',
-                    fontSize:14,       
-                }}>Your Weight</Text>                  
+                <View style={{flex:1}}/>       
             </View>
 
             
         </View>
-        
+
+        <View style={{        
+            alignItems:'center',
+            flex : 2,
+            
+        }}>
+            <Text style={{
+                
+                color: "black",
+                fontSize: 15,
+
+            }}> Have an account?Sign in</Text>
+        </View>
+
         <View style={{
             
             flex: 1,
@@ -150,7 +148,7 @@ function MainScreen(props)
                 borderRadius:20,
                 height: 55,
                 marginHorizontal: 50,
-                marginVertical:20,
+                marginVertical:5,
                 justifycontent: 'center',
                 alignItems: 'center',
                 
@@ -162,14 +160,15 @@ function MainScreen(props)
                     marginVertical: 10,
                 
 
-                }}>Next
+                }}>Login
                 </Text>
 
             </TouchableOpacity>
 
         </View>
+        
        
     </View>    
 }
 
-export default MainScreen
+export default SignupScreen
