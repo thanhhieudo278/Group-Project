@@ -19,6 +19,10 @@ function HomeScreen(props) {
       <View
         style={{
           flexDirection: 'row',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1dfae9babe1e32163ff0c594797abe7527366cdc
           flex: 15,
           justifyContent: 'flex-start',
           marginTop: 25,
@@ -28,6 +32,10 @@ function HomeScreen(props) {
             fontSize: 30,
             marginLeft: 20,
             fontWeight: 'bold',
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1dfae9babe1e32163ff0c594797abe7527366cdc
           flex: 100,
           backgroundColor: 'skyblue',
           justifyContent: 'flex-start',
@@ -36,6 +44,7 @@ function HomeScreen(props) {
         <Text
           style={{
             fontSize: 23,
+>>>>>>> 5a93f5a6fec27f2bbb1ec7bd51062092d0071027
           }}>
           Home
         </Text>
@@ -46,12 +55,23 @@ function HomeScreen(props) {
           style={{
             width: 30,
             height: 30,
+<<<<<<< HEAD
             marginEnd: 20,
+=======
+<<<<<<< HEAD
+            marginEnd: 20,
+=======
+>>>>>>> 1dfae9babe1e32163ff0c594797abe7527366cdc
             marginEnd: 10,
+>>>>>>> 5a93f5a6fec27f2bbb1ec7bd51062092d0071027
             tintColor: 'purple',
           }}
         />
       </View>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1dfae9babe1e32163ff0c594797abe7527366cdc
       <View
         style={{
           flex: 70,
@@ -119,6 +139,10 @@ function HomeScreen(props) {
           </TouchableOpacity>
         </View>
       </View>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1dfae9babe1e32163ff0c594797abe7527366cdc
       <View style={{
           flex:15,
           color: 'green'
@@ -131,6 +155,7 @@ function HomeScreen(props) {
           flex:15,
           color: 'green'
       }}/>
+>>>>>>> 5a93f5a6fec27f2bbb1ec7bd51062092d0071027
     </View>
   );
 }
